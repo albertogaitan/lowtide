@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Life Samples</title>
+	<meta name="author" content="Life - Low Tide Book/Archive ,lowtidebook.org" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+	<link href="../css/photoswipe.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../lib/klass.min.js"></script>
+	<script type="text/javascript" src="../js/code.photoswipe-3.0.5.min.js"></script>
+	
+	
+	<script type="text/javascript">
+
+		(function(window, PhotoSwipe){
+		
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {
+						preventHide: true,
+						getImageSource: function(obj){
+							return obj.url;
+						},
+						getImageCaption: function(obj){
+							return obj.caption;
+						}
+					},
+					instance = PhotoSwipe.attach( 
+						[
+							{ url: '../images/life/003.png', caption: 'Cover. Monroe, Gary W. The Natural Resources of Humboldt Bay. Sacramento, CA: Dept. of Fish and Game, State of CA, 1973'},
+							{ url: '../images/life/0005.png', caption: 'Title page. Monroe, Gary W. The Natural Resources of Humboldt Bay. Sacramento, CA: Dept. of Fish and Game, State of CA, 1973'},
+							{ url: '../images/life/0007.png', caption: 'Page 7. Monroe, Gary W. The Natural Resources of Humboldt Bay. Sacramento, CA: Dept. of Fish and Game, State of CA, 1973'},
+							{ url: '../images/life/guide_to_fishes-fritzsche_01.png', caption: 'Cover. Fritzsche and Cavanagh. A Guide to the Fishes of Humboldt Bay. Arcata, CA: Dept.'},
+							{ url: '../images/life/guide_to_fishes-fritzsche_02.png', caption: 'Title Page. Fritzsche and Cavanagh. A Guide to the Fishes of Humboldt Bay. Arcata, CA: Dept. of Fisheries, Humboldt State University, 1995'},
+							{ url: '../images/life/guide_to_fishes-fritzsche_14.png', caption: 'Pages 22-3. Fritzsche and Cavanagh. A Guide to the Fishes of Humboldt Bay. Arcata, CA: Dept. of Fisheries, Humboldt State University, 1995'},
+							{ url: '../images/life/guide_to_fishes-fritzsche_22.png', caption: 'Pages 24-5. Fritzsche and Cavanagh. A Guide to the Fishes of Humboldt Bay. Arcata, CA: Dept. of Fisheries, Humboldt State University, 1995'},
+						], 
+						options 
+					);
+					
+					instance.show(0);
+					
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
+		
+	</script>
+	
+</head>
+<body>
+
+
+</body>
+</html>

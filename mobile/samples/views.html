@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Views Samples</title>
+	<meta name="author" content="Views - Low Tide Book/Archive ,lowtidebook.org" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+	<link href="../css/photoswipe.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../lib/klass.min.js"></script>
+	<script type="text/javascript" src="../js/code.photoswipe-3.0.5.min.js"></script>
+	
+	
+	<script type="text/javascript">
+
+		(function(window, PhotoSwipe){
+		
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {
+						preventHide: true,
+						getImageSource: function(obj){
+							return obj.url;
+						},
+						getImageCaption: function(obj){
+							return obj.caption;
+						}
+					},
+					instance = PhotoSwipe.attach( 
+						[
+							{ url: '../images/views/2001012244.jpg', 
+							caption: 'Shuster, Merle. Photo ID 2001.01.2244. Bay Clouds. 10/8/1955. Humboldt State University Library Special Collections, Arcata, CA'},
+							{ url: '../images/views/2001012265.jpg', 
+							caption: 'Shuster, Merle. Photo ID 2001.01.2265. Bay Low Tide. 3/28/1957. Humboldt State University Library Special Collections, Arcata, CA'},
+							{ url: '../images/views/2001012246.jpg', 
+							caption: 'Shuster, Merle. Photo ID 2001.01.2246. Country Club Estates Speiring Extra. 12/7/1956. Humboldt State University Library Special Collections, Arcata, CA'},							
+							{ url: '../images/views/2001012278.jpg',
+							caption: 'Shuster, Merle. Photo ID 2001.01.2278. Coast Pacific. 8/15/1957. Humboldt State University Library Special Collections, Arcata, CA'},
+							{ url: '../images/views/2001012286.jpg', 
+							caption: 'Shuster, Merle. Photo ID 2001.01.2286. 101 - Elk River Rd. 8/25/1957. Humboldt State University Library Special Collections, Arcata, CA'},
+							{ url: '../images/views/Screen-shot-2012-06-16-at-5.06.png', 
+							caption: 'Shuster, Merle. Photo ID 2001.01.2377. Screen Shot: Aerials behind Chamber of Commerce KVIQ 6. 3/30/1968. Humboldt State University Library Special Collections, Arcata, CA'},
+						
+						], 
+						options 
+					);
+					
+					instance.show(0);
+					
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
+		
+	</script>
+	
+</head>
+<body>
+
+
+</body>
+</html>

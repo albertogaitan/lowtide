@@ -1,0 +1,52 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins,
+kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol,
+ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas, details, figcaption,
+figure, footer, header, hgroup, menu, nav, section, summary, time,
+mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 95%;
+vertical-align: baseline;
+background: transparent;
+}
+
+
+
+html, body {
+background: url("../images/bg_mobile.jpg") no-repeat center center ;
+font-family: "HelveticaNeue", Helvetica, sans-serif; color: #333;
+font-size: 100%;
+background-position:center center;
+background-attachment:scroll;
+background-size: cover;
+width: 100%;
+height: 100%;
+}
+
+ul#menu a{color: #ffffff;}
+
+ul#menu{ width: 10.5em; margin-top: .5em;
+	background: transparent;
+	}
+
+ul#menu li{list-style-type: none; padding: .2em .5em; color: #ffffff;}
+
+ul#menu li a{color: #fefefe; text-decoration: none; text-shadow: rgba(0, 0, 0, 0.7) 0 -1px 1px; }
+ul#menu li.nav{padding-top: .8em; position: relative; top: .2em; text-transform: uppercase; font-size: 120%;}
+ul#menu li.nav ul li.sub{padding-top: .2em; position: relative; top: .2em; 
+	font-size: 90%; border-left: 1px solid #fff; text-transform: lowercase;}
+
+
+h2{border-bottom: 1px solid #ffffff; }
+p{padding: .5em;}
+p.blueuppercase{text-transform: uppercase; color: #384f51; font-family: "HelveticaNeue" }
+
+div#text_img{width: 100%;}
+
+
+
+

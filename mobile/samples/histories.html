@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Histories Samples</title>
+	<meta name="author" content="Histories - Low Tide Book/Archive ,lowtidebook.org" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+	<link href="../css/photoswipe.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../lib/klass.min.js"></script>
+	<script type="text/javascript" src="../js/code.photoswipe-3.0.5.min.js"></script>
+	
+	
+	<script type="text/javascript">
+
+		(function(window, PhotoSwipe){
+		
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {
+						preventHide: true,
+						getImageSource: function(obj){
+							return obj.url;
+						},
+						getImageCaption: function(obj){
+							return obj.caption;
+						}
+					},
+					instance = PhotoSwipe.attach( 
+						[
+							{ url: '../images/histories/humboldt_bay_region-coy_03.png', caption: 'Cover and Title Page. Coy, O. C. The Humboldt Bay Region 1850-1875. Los Angeles/Eureka, CA: Cal. Hist. Assoc./Humboldt County Hist. Soc., 1982/1929'},
+							{ url: '../images/histories/humboldt_bay_region-coy_04.png', caption: 'Table of Contents. The Humboldt Bay Region 1850-1875. Los Angeles/Eureka, CA: Cal. Hist. Assoc./Humboldt County Hist. Soc., 1982/1929'},
+							{ url: '../images/histories/humboldt_bay_region-coy_30-31.png', caption: 'Pages 130-1. The Humboldt Bay Region 1850-1875. Los Angeles/Eureka, CA: Cal. Hist. Assoc./Humboldt County Hist. Soc., 1982/1929'},
+							{ url: '../images/histories/HumBayAtlasWebsite1.png', caption: 'Multi-folder screen image, June 2012. Humboldt Bay Eco-Atlas, Interactive Map. Humboldt Bay'},
+							{ url: '../images/histories/HumboldtBayAtlasWebsite2.png', caption: 'Limited screen image, June 2012. Humboldt Bay Eco-Atlas, Interactive Map. Humboldt Bay'},
+							{ url: '../images/histories/madaket_tells-krei_01.png', caption: 'Cover. Krei, Melvin. Madaket Tells Her Story. Eureka, CA: Eureka Printing Company, Inc., 1988'},
+							{ url: '../images/histories/madaket_tells-krei_17.png', caption: 'Pages 22-3. Krei, Melvin. Madaket Tells Her Story. Eureka, CA: Eureka Printing Company, Inc., 1988'},
+						], 
+						options 
+					);
+					
+					instance.show(0);
+					
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
+		
+	</script>
+	
+</head>
+<body>
+
+
+</body>
+</html>

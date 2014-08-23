@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Engineering Samples</title>
+	<meta name="author" content="Engineering - Low Tide Book/Archive ,lowtidebook.org" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+	<link href="../css/photoswipe.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../lib/klass.min.js"></script>
+	<script type="text/javascript" src="../js/code.photoswipe-3.0.5.min.js"></script>
+	
+	
+	<script type="text/javascript">
+
+		(function(window, PhotoSwipe){
+		
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {
+						preventHide: true,
+						getImageSource: function(obj){
+							return obj.url;
+						},
+						getImageCaption: function(obj){
+							return obj.caption;
+						}
+					},
+					instance = PhotoSwipe.attach( 
+						[
+							{ url: '../images/engineering/HumHarborDeepeningNavStudy1989_cover.png', 
+							caption: 'Title page. Humboldt Harbor and Bay (Deepening) General Investigations Reconnaissance Navigation Study. San Francisco, CA: US Army Corps of Engineers, 1989'},
+							{ url: '../images/engineering/HumHarborDeepeningNavStudy1989_map6color.png', 
+							caption: 'Map 6. Humboldt Harbor and Bay (Deepening) General Investigations Reconnaissance Navigation Study. San Francis'},
+							{ url: '../images/engineering/HumHarborDeepeningNavStudy1989_map7color.png', 
+							caption: 'Map 7. Humboldt Harbor and Bay (Deepening) General Investigations Reconnaissance Navigation Study. San Francis'},
+							{ url: '../images/engineering/HumHarborDeepeningNavStudy1989_plateC12.png', 
+							caption: 'Plates C 12-13. Humboldt Harbor and Bay (Deepening) General Investigations Reconnaissance'},
+							{ url: '../images/engineering/AddendumWoodley.WinzerKelly_cover.png', 
+							caption: 'Cover. Environmental Research Consultants, Inc. Humboldt Bay Harbor, Recreation and Conservation District, Humboldt Harbor Marina Project, Environmental Impact Report. Arcata, CA: ERC, Inc, 1975'},
+							{ url: '../images/engineering/AddendumWoodley.WinzerKelly_plate3.png', 
+							caption: 'Plate 3. Environmental Research Consultants, Inc. Humboldt Bay Harbor, Recreation and Conservation District, Humboldt Harbor Marina Project, Environmental Impact Report. Arcata, CA: ERC, Inc, 1975'},
+
+
+						], 
+						options 
+					);
+					
+					instance.show(0);
+					
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
+		
+	</script>
+	
+</head>
+<body>
+
+
+</body>
+</html>
